@@ -1,5 +1,4 @@
-list = [["a", 1], ["b", 2], ["c", 3], ["d", 4]]
-
+list = [['a', 1], ['b', 2], ['c', 3], ['d', 4]]
 dict = {}
 
 for i in range(len(list)):

@@ -1,4 +1,4 @@
-product_info = {"description": "shoe", "price": 4.56, "colors": ["green", "blue", "red"]}
+product_info = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
 y = []
 
