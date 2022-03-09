@@ -4,7 +4,7 @@ while True:
 
     for i in x:
         if i.isalpha() == False:
-            print("{} is not a character.".format(i))
+            print("{} is not a letter.".format(i))
         else:
             if i in vowel_list:
                 print("{} is a vowel.".format(i))

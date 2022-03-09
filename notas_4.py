@@ -43,6 +43,7 @@ class Note:
         gf = (g1+"\n "+g2+"\n "+g3+"\n "+g4+"\n "+g5+"\n "+g6+"\n "+g7)
         return str(gf)
 
+    #Print the majors
     def print_major(self):
         return print(" O acorde de",(x).i,"maior é:","\n",
                      (x).chord(),"\n",
@@ -52,6 +53,7 @@ class Note:
                      (x).majorfield()
                      )
     
+    #Print the minors
     def print_minor(self):
         return print(" O acorde de",(x).i,"menor é:","\n",
                      (x).chord(),"\n",
@@ -85,17 +87,6 @@ while True:
 
     if inp == "c":
         x = c
-        x.print_major()
-    
-        #Minor changes for "C":
-        (x).iii = "Eb"
-        (x).vi = "Ab"
-        (x).vii = "Bb"
-        x.print_minor()
-
-    elif inp == "b#":
-        x = c
-        print(" B# é a mesma coisa que C!")
         x.print_major()
     
         #Minor changes for "C":
@@ -182,20 +173,7 @@ while True:
         (x).iii = "Ab"
         (x).vi = "Db"
         (x).vii = "Eb"
-        x.print_minor()
-
-    elif inp == "e#":
-        x = f
-        print(" E# é a mesma coisa que F!")
-        x.print_major()
-
-        #Minor changes for "F":
-        (x).iii = "Ab"
-        (x).vi = "Db"
-        (x).vii = "Eb"
-        x.print_minor()
-
-    
+        x.print_minor()  
     
     elif inp == "bb":
         x = bb
@@ -217,30 +195,8 @@ while True:
         (x).vii = "Db"
         x.print_minor()
 
-    elif inp == "d#":
-        x = eb
-        print(" D# é a mesma coisa que Eb!")
-        x.print_major()
-
-        #Minor changes for "Eb":
-        (x).iii = "Gb"
-        (x).vi = "Cb"
-        (x).vii = "Db"
-        x.print_minor()
-    
     elif inp == "ab":
         x = ab
-        x.print_major()
-
-        #Minor changes for "Ab":
-        (x).iii = "Cb"
-        (x).vi = "Fb"
-        (x).vii = "Gb"
-        x.print_minor()
-
-    elif inp == "g#":
-        x = ab
-        print("G# é a mesma coisa que Ab!")
         x.print_major()
 
         #Minor changes for "Ab":
